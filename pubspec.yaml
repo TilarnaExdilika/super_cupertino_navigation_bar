@@ -1,0 +1,19 @@
+name: super_cupertino_navigation_bar
+description: Elevate your Flutter app's aesthetics with a collapsible app bar, stylish search bar animation, and versatile design inspired by iOS.
+version: 2.1.2
+homepage: https://github.com/kspo/super_cupertino_navigation_bar.git
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=1.17.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  snap_scroll_physics: ^0.0.1+3
+  nested_scroll_view_plus: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
