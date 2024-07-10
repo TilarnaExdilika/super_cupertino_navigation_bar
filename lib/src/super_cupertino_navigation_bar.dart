@@ -25,6 +25,7 @@ class SuperScaffold extends StatefulWidget {
     this.brightness,
     this.scrollController,
     this.transitionBetweenRoutes = true,
+    this.heroTag,
   }) : super(key: key) {
     measures = Measures(
       searchTextFieldHeight: appBar.searchBar!.height,
@@ -46,6 +47,7 @@ class SuperScaffold extends StatefulWidget {
   ///
   /// Defaults to `true`.
   final bool stretch;
+  final String? heroTag;
 
   /// {@template flutter.cupertino.CupertinoNavigationBar.transitionBetweenRoutes}
   /// Whether to transition between navigation bars.
@@ -966,7 +968,8 @@ class _SuperScaffoldState extends State<SuperScaffold> {
                             }
 
                             return Hero(
-                              tag: HeroTag(Navigator.of(context)),
+                              tag: widget.heroTag ??
+                                  HeroTag(Navigator.of(context)),
                               createRectTween:
                                   linearTranslateWithLargestRectSizeTween,
                               flightShuttleBuilder:
