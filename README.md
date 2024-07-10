@@ -103,6 +103,14 @@ dependencies:
   super_cupertino_navigation_bar: latest_version
 ```
 
+```yaml
+CustomVersionByTilarna
+dependencies:
+  super_cupertino_navigation_bar:
+    git:
+      url: https://github.com/TilarnaExdilika/super_cupertino_navigation_bar.git
+```
+
 #### Add import package
 
 ```dart
